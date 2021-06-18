@@ -45,15 +45,15 @@ class ContactForm extends Model {
             $mail->SMTPDebug     = SMTP::DEBUG_SERVER;
             $mail->SMTPAuth      = true;
             $mail->SMTPKeepAlive = true;
-            $mail->Host          = 'mail.druprr.com';
+            $mail->Host          = '';
             $mail->Port          = 465;
-            $mail->Username      = 'no-reply@druprr.com';
-            $mail->Password      = 'Junkie1024';
+            $mail->Username      = '';
+            $mail->Password      = '';
             $mail->SMTPSecure    = 'ssl';
 
             //Recipients
-            $mail->setFrom('no-reply@druprr.com', 'GARDEN Framework');
-            $mail->addAddress('tmtinteractive@gmail.com', 'Daniel Aghedo'); //Add a recipient
+            $mail->setFrom('sender@email.com', 'GARDEN Framework');
+            $mail->addAddress('recipient@email.com', 'Recipient Name'); //Add a recipient
 
             //Content
             $mail->isHTML(true); //Set email format to HTML
