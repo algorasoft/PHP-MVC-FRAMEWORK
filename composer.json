@@ -1,11 +1,9 @@
 {
-    "name": "user/php-mvc-framework",
-    "authors": [
-        {
-            "name": "Roman Israel",
-            "email": "cto@algorasoft.com"
-        }
-    ],
+    "name": "algorasoft/algorasoft",
+    "authors": [{
+        "name": "Roman Israel",
+        "email": "cto@algorasoft.com"
+    }],
     "autoload": {
         "psr-4": {
             "app\\": "./"
